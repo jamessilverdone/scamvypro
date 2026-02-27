@@ -1,16 +1,20 @@
-# React + Vite
+# Scamvy Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Empowering victims with knowledge, tools, and expert guidance to fight back against online fraud.
 
-Currently, two official plugins are available:
+## Features
+- **Scam Identification**: Learn about common scam types.
+- **Recovery Guide**: Step-by-step instructions for recovery.
+- **Free Consultation**: Professional help via FormSubmit.
+- **Reporting Tools**: Quick links to FBI IC3 and FTC.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Built With
+- React + Vite
+- Lucide Icons
+- Vanilla CSS
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Development
+```bash
+npm install
+npm run dev
+```
