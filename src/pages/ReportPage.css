@@ -1,0 +1,107 @@
+.report-how-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.report-how-item {
+    padding: 22px 20px;
+}
+
+.report-how-num {
+    font-family: var(--font-head);
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--teal);
+    opacity: 0.4;
+    margin-bottom: 10px;
+}
+
+.report-how-item h4 {
+    font-family: var(--font-head);
+    font-size: 0.95rem;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.report-how-item p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+}
+
+/* AGENCY REGIONS */
+.agency-regions {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.agency-region__title {
+    font-size: 1.2rem;
+    font-family: var(--font-head);
+    color: var(--white);
+    margin-bottom: 20px;
+    padding-left: 16px;
+    border-left: 4px solid var(--region-color, var(--teal));
+}
+
+.agency-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.agency-card__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.agency-card h4 {
+    font-family: var(--font-head);
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 6px;
+}
+
+.agency-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.82rem;
+    color: var(--teal);
+    font-family: var(--font-head);
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.agency-card__link:hover {
+    color: var(--teal-dark);
+}
+
+.agency-card__desc {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin-bottom: 14px;
+}
+
+.agency-card__best {
+    display: flex;
+}
+
+@media (max-width: 900px) {
+    .report-how-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .report-how-grid {
+        grid-template-columns: 1fr;
+    }
+}

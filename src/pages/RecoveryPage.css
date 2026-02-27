@@ -1,0 +1,129 @@
+/* RECOVERY PAGE */
+.recovery-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.recovery-step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 32px;
+    padding: 36px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    transition: background 0.2s ease;
+}
+
+.recovery-step:last-child {
+    border-bottom: none;
+}
+
+.recovery-step:hover {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--radius-md);
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.recovery-step__number {
+    font-family: var(--font-head);
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--step-color, var(--teal));
+    opacity: 0.3;
+    line-height: 1;
+    align-self: flex-start;
+    padding-top: 4px;
+}
+
+.recovery-step__header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.recovery-step__icon {
+    font-size: 1.4rem;
+    color: var(--step-color, var(--teal));
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 10px;
+    border: 1px solid currentColor;
+    opacity: 0.9;
+    flex-shrink: 0;
+}
+
+.recovery-step__title {
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.recovery-step__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recovery-step__list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.93rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.rs-check {
+    color: var(--step-color, var(--teal));
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+/* NEVER PAY */
+.never-pay-card {
+    text-align: center;
+}
+
+.never-pay-card__icon {
+    font-size: 2rem;
+    color: #FF4C4C;
+    margin: 0 auto 14px;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 76, 76, 0.1);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 76, 76, 0.2);
+}
+
+.never-pay-card h4 {
+    font-family: var(--font-head);
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.never-pay-card p {
+    font-size: 0.87rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+    .recovery-step {
+        grid-template-columns: 50px 1fr;
+        gap: 16px;
+    }
+
+    .recovery-step__number {
+        font-size: 2rem;
+    }
+}
